@@ -1,0 +1,211 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(15, 15, 15);
+    color: rgb(219, 219, 219);
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(15px + 0.5vw);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, li{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: rgb(219, 219, 219);;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(139, 166, 255);
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+h1{
+    font-size: calc(30px + 1vw);
+    font-weight: 700;
+}
+h2{
+    font-size: calc(25px + 0.8vw);
+    font-weight: 700;
+}
+h3{
+    font-size: calc(20px + 0.6vw);
+    font-weight: 700;
+}
+h4{
+    font-size: calc(15px + 0.5vw);
+    font-weight: 700;
+}
+h5{
+    font-size: calc(15px + 0.5vw);
+    font-weight: 700;
+}
+h6{
+    font-size: calc(15px + 0.5vw);
+    font-weight: 700;
+}
+p{
+    font-size: calc(15px + 0.5vw);
+    font-weight: 400;
+}
+li{
+    font-size: calc(15px + 0.5vw);
+    font-weight: 400;
+}
+hr{
+    border: none;
+    height: 3px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 10px;
+    width: 100%;
+}
+
+/*Welcome block*/
+
+.welcomeBlock{
+    background: url(images/welcomePic.jpg) no-repeat center center fixed;
+    background-size: cover;
+    transition: .3s,border-radius .3s,opacity .3s;
+}
+.welcomeBlur{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    min-height: 60vh;
+
+
+    backdrop-filter: blur(10px) saturate(50%) brightness(0.4);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Who we are block */
+.whoWeAre{
+    position: relative;
+
+    background: white;
+    background-size: cover;
+
+    color: rgb(15, 15, 15);
+    
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+.whoWeAreContent{
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.whoWeAreText{
+    max-width: calc(200px + 15vw);
+    padding-right: 5%;
+}
+.whoWeArePics{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: calc(250px + 15vw);
+}
+.whoWeAre img{
+    max-width: calc(250px + 15vw);
+}
+
+/* What we do block */
+.whatWeDo{
+    background: rgb(15, 15, 15);
+    background-size: cover;
+
+    color: rgb(219, 219, 219);
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: calc(15vw + 35px);
+    padding-right: calc(15vw + 35px);
+}
+.whatWeDo ol{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: -100px;
+    margin-right: -70px;
+}
+.whatWeDo li{
+    list-style-type: none;
+    min-width: 200px;
+    max-width: 300px;
+    width: calc(200px + 3vw);
+    margin: 10px;
+
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 10px;
+    padding: calc(30px + 1vw);;
+}
+.whatWeDo li:hover{
+    background: rgb(219, 219, 219);
+    color: rgb(15, 15, 15);
+    border: 1px solid rgb(15, 15, 15);
+    transition: .3s;
+    cursor: pointer;
+    margin: 5px;
+    padding: calc(35px + 1vw);;
+}
+
+/*footer*/
+footer{
+    background: rgb(15, 15, 15);
+    background-size: cover;
+
+    color: rgb(219, 219, 219);
+}
+.footerBackground{
+    background: url(images/welcomePic.jpg) no-repeat center fixed;
+    background-size: cover;
+    transition: .3s,border-radius .3s,opacity .3s;
+}
+.footerBlur{
+    position: relative;
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+
+    backdrop-filter: blur(10px) saturate(50%) brightness(0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerContacts{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.whatWeDo hr, footer hr, .welcomeBlock hr{
+    background-color: rgb(219, 219, 219);
+}
